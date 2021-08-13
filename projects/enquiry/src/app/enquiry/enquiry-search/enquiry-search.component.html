@@ -1,0 +1,14 @@
+<p>enrollment-search works!</p>
+<input type="text" value="" id="searchId" name="searchId" #searchId/>
+<hr/>
+<input type="button" text="Search" value="Search" (click)="onSubmit(searchId.value)"/>
+<hr/>
+<table border="1">
+	<tr>
+		<th>Search Items</th>
+	</tr>
+	<tr *ngFor="let o of InputList">
+		<td>{{o}}</td>
+	</tr>
+</table>
+
